@@ -1,0 +1,13 @@
+node_modules/
+.pnpm-store/
+uploads/*
+!uploads/.gitkeep
+data.json
+*.log
+*.zip
+_deploy.mjs
+_test_mod.mjs
+pnpm-lock.yaml
+.npmrc
+deploy.js
+forum-for-zeabur.zip
