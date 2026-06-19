@@ -1,0 +1,10 @@
+node_modules
+.git
+.pnpm-store
+*.log
+Dockerfile
+.dockerignore
+README.md
+start.bat
+uploads/*
+!uploads/.gitkeep
