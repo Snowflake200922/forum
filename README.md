@@ -73,3 +73,21 @@ node server.js
 |--------|------|--------|
 | `PORT` | 服务器端口 | `3000` |
 | `DATA_DIR` | 数据持久化目录（容器部署时必填） | 项目目录 |
+
+---
+
+## 一键部署
+
+[![Deploy to Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/new?repo=Snowflake200922/forum)
+
+## 环境变量
+
+部署后需设置：
+
+| 变量 | 值 |
+|---|---|
+| `DATA_DIR` | `/data` |
+
+## 持久化存储
+
+挂载 `/data` 目录用于保存图片和数据。
