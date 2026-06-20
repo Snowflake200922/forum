@@ -1,0 +1,17 @@
+﻿version: "1"
+services:
+  - type: web
+    name: forum
+    runtime: docker
+    repo: https://github.com/Snowflake200922/forum
+    plan: free
+    region: ohio
+    envVars:
+      - key: DATA_DIR
+        value: /data
+      - key: PORT
+        value: "3000"
+    disk:
+      name: forum-data
+      mountPath: /data
+      sizeGB: 1
