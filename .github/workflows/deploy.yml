@@ -1,0 +1,17 @@
+name: Deploy to Zeabur
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Zeabur
+        uses: zeabur/deploy-action@v1
+        with:
+          project_name: "forum"
+          env: "production"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
